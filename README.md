@@ -23,7 +23,7 @@ My initial inspiration for this project was because I wanted to get the results 
 ## TO DO: 
     1. Create a method for updating X-AUTH-TOKEN automatically 
     2. Implement an AI chat bot with a web hook for messaging matches  
-    3. Support for proxies  
+    3.   
     
 ## DEPENDENCIES: 
     PYPI Modules                [Arrow, Selenium, Time, Psutil, Datetime, etc...]
