@@ -16,7 +16,9 @@ My initial inspiration for this project was because I wanted to get the results 
     * Before running this program, you want to make sure you update your X-AUTH-TOKEN as shown in the documentation. 
     * To my knowledge a unique key is generated after a period of 7 days from issue time. This means the longest period of time that the bot will run on its own for is 7 days after which Tinder will revoke the token and issue a new one. 
     * The X-AUTH-TOKEN is nothing more than a key witch authenticates requests made to the Tinder API. 
-    * If the urls for the API endpoints happen to change at any point at time, you attempt to update them yourself by using either Postman or with Chrome dev tools. 
+    * If the urls for the API endpoints happen to change at any point at time, you attempt to update them yourself by using either Postman or with Chrome dev tools. Chrome dev tools helps to clue you into what urls are needed for get/post requests and what parameters need to be sent. 
+    * If ever an error/exception is encountered, it will print a vague error statement to console and it will also notate it in the log file. 
+    * As I mention in the disclaimer...the user is still required to: (a) hold a conversation upon a successful match (b) manually update stale api keys at least once a week
     
 ## TO DO: 
     1. Create a method for updating X-AUTH-TOKEN automatically 
