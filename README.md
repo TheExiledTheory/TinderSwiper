@@ -11,7 +11,7 @@ My initial inspiration for this project was because I wanted to get the results 
     Chromium 83.0.4103.116
     Chromedriver 83.0.4103.14
 
-# General information / FAQ: 
+# General information: 
 
     * Before running this program, you want to make sure you update your X-AUTH-TOKEN as shown in the documentation. 
     * To my knowledge a unique key is generated after a period of 7 days from issue time. This means the longest period of time that the bot will run on its own for is 7 days after which Tinder will revoke the token and issue a new one. 
@@ -19,6 +19,10 @@ My initial inspiration for this project was because I wanted to get the results 
     * If the urls for the API endpoints happen to change at any point at time, you attempt to update them yourself by using either Postman or with Chrome dev tools. Chrome dev tools helps to clue you into what urls are needed for get/post requests and what parameters need to be sent. 
     * If ever an error/exception is encountered, it will print a vague error statement to console and it will also notate it in the log file. 
     * As I mention in the disclaimer...the user is still required to: (a) hold a conversation upon a successful match (b) manually update stale api keys at least once a week
+    * As with any regular Tinder account, it work best with Tinder+ because you get to change your location and you get unlimited likes. 
+    
+    *AVOIDING BANS/SHADOWN BANS* 
+     
     
 ## TO DO: 
     1. Create a method for updating X-AUTH-TOKEN automatically 
@@ -31,6 +35,4 @@ My initial inspiration for this project was because I wanted to get the results 
     Python 3+                   [This script is written in Python 3]
     Linux flavor of choice      [This can also be used on Windows but the included files are for Linux] 
 
-_If Nike updates any page elements that range from the size selection to the checkout page, the element variable will need to be updated to reflect that_
-## Credit: 
-    https://github.com/fbessez/Tinder
+_Credit: https://github.com/fbessez/Tinder_
