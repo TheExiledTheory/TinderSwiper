@@ -1,7 +1,7 @@
-# DISCLAIMER: This project is mostly finalized but at any time Tinder can change one little thing on their backend API and it can break the whole bot. This currently posted version of the bot is not perfect either; the bot as of now is SEMI-AUTONOMOUS and swipes based upon a randomness factor. I do not have a work around for updating the the auth key automatically, however I am currently implementing a machine learning algorithm in order to swipe based on a 'prettiness score.' I also included a documentation pdf which will provide some insight on how to obtain your X-AUTH-KEY in order to setup the bot. 
+# DISCLAIMER: This project is mostly finalized but at any time Tinder can change one little thing on their backend API and it can break the whole bot. This currently posted version of the bot is not perfect either; the bot as of now is SEMI-AUTONOMOUS and swipes based upon a randomness factor. I do not have a work around for updating the the auth key automatically, however I am currently implementing a machine learning algorithm in order to swipe based on a 'prettiness score.' I have included a documentation pdf which will provide some insight on how to obtain your X-AUTH-KEY in order to setup the bot. 
 
 # Description: 
-My initial inspiration for this project was because I wanted to get the results (matches) from Tinder without swiping in the pure toxcicity of the app. I noticed that I was putting more time and primaryly more effort into it than I would care to admit and getting nothing from it. So with this approach I can use it from time to time when I am uniquely board but I have no sweat off my back because I am able to match passively. This bot does not amplify the quality or quantity of your matches beyond what it was to begin with, it just swipes for you. So whatever kind of matches you were initially getting, you will continue to get...just without any effort :) 
+My initial inspiration for this project was because I wanted to get the results (matches) from Tinder without swiping in the pure toxcicity of the app. I noticed that I was putting more time and primaryly more effort into it than I would care to admit and getting nothing from it. So with this approach I can use it from time to time when I am uniquely bord but I have no sweat off my back because I am able to match passively. This bot does not amplify the quality or quantity of your matches beyond what it was to begin with, it just swipes for you. So whatever kind of matches you were initially getting, you will continue to get...just without any effort :) 
     
 
 ## Last successful test: 06/12/2021
@@ -11,65 +11,17 @@ My initial inspiration for this project was because I wanted to get the results 
     Chromium 83.0.4103.116
     Chromedriver 83.0.4103.14
 
-# Instructions: 
+# General information / FAQ: 
 
-    1. Check your current installation of Python3/Pip3 and Chrome and ChromeDriver:
-        In terminal type:
-            "python3 -V" 
-            "pip3 --version"
-            "chromium-browser --version" or "google-chrome --version"
-            "chromedriver --version"
-
-    Note: If you need to install GoogleChrome/ChromeDriver, it can be done so at the following
-
-    Note: The version of GoogleChrome/Chromium need to match the the chrome
-            "https://sites.google.com/a/chromium.org/chromedriver/downloads"  
-            "https://www.slimjet.com/chrome/google-chrome-old-version.php"
-
-    If you need to unzip/untar the folder after download use: 
-            "sudo unzip filename" or "sudo tar -zxvf filename"
-
-    2. Once you have everything downloaded you need to install and give permissions:
-        Move the chrome .deb file to the root folder for this script:
-            "sudo mv filename foldername"
-        Depackage Google Chrome with:
-            "dpkg -i filename" 
-        Give the Chrome Driver appropriate permissions with:
-            "sudo chmod +x filename" 
-
-        Copy the Chrome Drive to /usr/bin and give it permissions with:
-            "sudo cp filename /usr/bin/"
-            "sudo chmod +x /usr/bin/filename"
-        You can also use the following command just to be certain:
-            "export PATH=$PATH:/path-to-extracted-file/" in terminal so tools can find it 
-
-    3. Additional resources:
-        Included in this repo are three pdf files that should aid you in getting setup, should the need araise...
-
-    4. To run the script, use the following command:
-            "sudo python3 filename.py"
-
-    5. If you need to install any PYPI modules use:
-            "pip3 install pause pyvirtualdisplay selenium arrow psutil time" etc.
-
-If at any point the program crashes. The browser may not be closed correctly leaving a zombie in the process list. 
-You can find them buy typing "top" and looking for "zombies" in the stats. You can see all the defunct or "zombie" 
-processes by typing "ps -elf | grep Z" or just type "pgrep chrome" or "pgrep chromium" into terminal. 
-To kill them use "kill $(pgrep chrome)" "kill $(pgrep chromium) or just type "kill PPID" if you want to kill a single specific process.
-
-Zombie processes are caused by the parent program (script) being closed before it can read the status of the child process (web browser). The zombie process is infact dead so it is not consuming resources, however its entry from the OS process table. This is not bad but after a large enough number of these are left, you can run out of entries in the table.
-
-
-
+    * Before running this program, you want to make sure you update your X-AUTH-TOKEN as shown in the documentation. 
+    * To my knowledge a unique key is generated after a period of 7 days from issue time. This means the longest period of time that the bot will run on its own for is 7 days after which Tinder will revoke the token and issue a new one. 
+    * The X-AUTH-TOKEN is nothing more than a key witch authenticates requests made to the Tinder API. 
+    * If the urls for the API endpoints happen to change at any point at time, you attempt to update them yourself by using either Postman or with Chrome dev tools. 
+    
 ## TO DO: 
-    1. Multithreading to support multiple sessions/accounts/proxies 
-    2. Support for multiple accounts 
+    1. Create a method for updating X-AUTH-TOKEN automatically 
+    2. Implement an AI chat bot with a web hook for messaging matches  
     3. Support for proxies  
-    4. Add a GUI interface 
-    5. Add support for checkout through cart 
-    6. Add a SMTP support to verify confirmation email 
-    7. Add support for solving captcha (Not required atm)  
-    8. Account for multiple size selections of a single shoe on a given page!
     
 ## DEPENDENCIES: 
     PYPI Modules                [Arrow, Selenium, Time, Psutil, Datetime, etc...]
