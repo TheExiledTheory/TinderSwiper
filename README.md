@@ -1,8 +1,8 @@
-#
+# DISCLAIMER: This program is a work in progress! At any time Tinder can change one little thing on their backend API and it can break the whole bot. This currently posted version of the bot is not perfect either; the bot as of now is SEMI-AUTONOMOUS and swipes based upon a randomness factor. I do not have a work around for updating the the auth key automatically, however I am currently implementing a machine learning algorithm in order to swipe based on a 'prettiness score.' I also included a documentation pdf which will provide some insight on how to obtain your X-AUTH-KEY in order to setup the bot. 
+
 # Description: 
 My initial inspiration for this project was because I wanted to get the results (matches) from Tinder without swiping in the pure toxcicity of the app. I noticed that I was putting more time and primaryly more effort into it than I would care to admit and getting nothing from it. So with this approach I can use it from time to time when I am uniquely board but I have no sweat off my back because I am able to match passively. This bot does not amplify the quality or quantity of your matches beyond what it was to begin with, it just swipes for you. So whatever kind of matches you were initially getting, you will continue to get...just without any effort :) 
     
-# DISCLAIMER: This program is a work in progress! At any time Tinder can change one little thing on their backend API and it can break the whole bot. This currently posted version of the bot is not perfect either; the bot as of now is SEMI-AUTONOMOUS and swipes based upon a randomness factor. I do not have a work around for updating the the auth key automatically, however I am currently implementing a machine learning algorithm in order to swipe based on a 'prettiness score.' I also included a documentation pdf which will provide some insight on how to obtain your X-AUTH-KEY in order to setup the bot. 
 
 ## Last successful test: 06/12/2021
     Distro Debian GNU/Linux 9
