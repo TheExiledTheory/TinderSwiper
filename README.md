@@ -6,20 +6,18 @@ My initial inspiration for this project was because I wanted to get the results 
 
 ## Last successful test: 06/12/2021
     Distro Debian GNU/Linux 9
-    Selenium 4.0.0.a1
     Python 3.8.6
-    Chromium 83.0.4103.116
-    Chromedriver 83.0.4103.14
 
 # General information: 
 
     * Before running this program, you want to make sure you update your X-AUTH-TOKEN as shown in the documentation. 
-    * To my knowledge a unique key is generated after a period of 7 days from issue time. This means the longest period of time that the bot will run on its own for is 7 days after which Tinder will revoke the token and issue a new one. 
     * The X-AUTH-TOKEN is nothing more than a key witch authenticates requests made to the Tinder API. 
+    * To my knowledge a unique key is generated after a period of 7 days from issue time. This means the longest period of time that the bot will run on its own for is 7 days after which Tinder will revoke the token and issue a new one. 
     * If the urls for the API endpoints happen to change at any point at time, you attempt to update them yourself by using either Postman or with Chrome dev tools. Chrome dev tools helps to clue you into what urls are needed for get/post requests and what parameters need to be sent. 
     * If ever an error/exception is encountered, it will print a vague error statement to console and it will also notate it in the log file. 
     * As I mention in the disclaimer...the user is still required to: (a) hold a conversation upon a successful match (b) manually update stale api keys at least once a week
-    * As with any regular Tinder account, it work best with Tinder+ because you get to change your location and you get unlimited likes. 
+    * This works best with Tinder+ because you get to change your location and you get unlimited likes. 
+    * The bot does support messaging however it is only limited to a simple corny openers 
     
     *AVOIDING BANS/SHADOWN BANS* 
      
@@ -27,12 +25,10 @@ My initial inspiration for this project was because I wanted to get the results 
 ## TO DO: 
     1. Create a method for updating X-AUTH-TOKEN automatically 
     2. Implement an AI chat bot with a web hook for messaging matches  
-    3.   
+    3. GUI? 
     
 ## DEPENDENCIES: 
-    PYPI Modules                [Arrow, Selenium, Time, Psutil, Datetime, etc...]
-    Chrome webdriver            [That corresponds to your version of installed Chrome]
-    Python 3+                   [This script is written in Python 3]
-    Linux flavor of choice      [This can also be used on Windows but the included files are for Linux] 
+    Python3 Libraries           [Colorama, shapely, pyproj, requests]
+
 
 _Credit: https://github.com/fbessez/Tinder_
