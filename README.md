@@ -31,4 +31,4 @@ My initial inspiration for this project was because I wanted to get the results 
     Python3 Libraries           [Colorama, shapely, pyproj, requests]
 
 
-_Credit: https://github.com/fbessez/Tinder_
+_Credit for endpoints: https://github.com/fbessez/Tinder_
