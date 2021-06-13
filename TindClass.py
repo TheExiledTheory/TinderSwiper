@@ -15,6 +15,7 @@ import pyproj
 from shapely.ops import transform
 from shapely.geometry import Point
 import logging
+import colorama
 from logging.config import fileConfig
 
 #Not sure??? -> used in coordinate_generation() 
@@ -37,7 +38,7 @@ class TindClass:
     dict_self_info = {} 			                #Dictionary to hold general profile info
     dict_meta_info = {} 				            #Dictionary to hold meta profile on the account
     recommendation_list_length = 0                  #Gets length of the recommendation list
-    current_lat = 0                                 #Base coord of users current location
+    current_lat = 0                                 #Base coord of users current 
     current_lon = 0                                 #Base coord of users current location
     range_list = []						            #Holds the coordinates for outter circle around current_lat and current_lon
     subscription = ["plus", "gold", "platinum"]     #Holds the type of subscription if any
