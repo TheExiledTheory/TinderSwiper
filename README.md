@@ -22,11 +22,11 @@ My initial inspiration for this project was because I wanted to get the results 
     *AVOIDING BANS/SHADOWN BANS* 
     
     * To avoid getting banned or shadow banned (shown to fewer people) you can take a few or all of the following steps 
-    * 1. Use a spoofed IP that you haven't used before 
-    * 2. Use a never used before Google/Facebook/Phone# ... Google voice is great for the phone number 
-    * 3. Use different profile details - name / location / school / bio 
-    * 4. Use brand new photos. Tinder collects and retains your photos and meta data from those photos. You can import your photos into Window and go to properties to remove meta data. For linux you can use [sudo mogrify -strip ./*jpeg] 
-    * 5. Use a new or portable browser before making a new account and while using in order to clear cookies and browser fingerprint 
+     1. Use a spoofed IP that you haven't used before 
+     2. Use a never used before Google/Facebook/Phone# ... Google voice is great for the phone number 
+     3. Use different profile details - name / location / school / bio 
+     4. Use brand new photos. Tinder collects and retains your photos and meta data from those photos. You can import your photos into Window and go to properties to remove meta data. For linux you can use [sudo mogrify -strip ./*jpeg] 
+     5. Use a new or portable browser before making a new account and while using in order to clear cookies and browser fingerprint 
     
      
     
