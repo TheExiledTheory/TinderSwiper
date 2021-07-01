@@ -138,7 +138,7 @@ class TindClass:
                     self.matchMessenger()
 
                     #Hibernate bot
-                    self.clock()
+                    self.hibernationClock()
 
                     #Reset counter
                     self.encounters_count_current_cycle = 0
@@ -154,7 +154,7 @@ class TindClass:
                     self.matchMessenger()
 
                     #Hibernate bot
-                    self.clock()
+                    self.hibernationClock()
 
                     print(f"Resuming from hibernation stats: likes: {self.likes} dislikes: {self.dislikes} total profiles: {self.encounters_count}\n")
 
@@ -292,8 +292,9 @@ class TindClass:
                     print(f"\tAge: {person_age}")
                     print(f"\tThey liked us: {person_match}")
                     print(f"\tBio: {person_bio}")
-                    print(f"\t{Fore.BLUE}Liked with randomness chance of: {rand}%{Style.RESET_ALL}\n")
-
+                    #print(f"\t{Fore.BLUE}Liked with randomness chance of: {rand}%{Style.RESET_ALL}\n")
+                    print(f"\tLiked with randomness chance of: {rand}%\n")
+                    
                     self.likes += 1
 
                 except Exception as ex:
@@ -311,7 +312,8 @@ class TindClass:
                     print(f"\tAge: {person_age}")
                     print(f"\tThey liked us: {person_match}")
                     print(f"\tBio: {person_bio}")
-                    print(f"\t{Fore.RED}Disiked with randomness chance of: {rand}%{Style.RESET_ALL}\n")
+                    print(f"\tDisliked with randomness chance of: {rand}%\n")
+                    #print(f"\t{Fore.RED}Disiked with randomness chance of: {rand}%{Style.RESET_ALL}\n")
 
 
                     self.dislikes += 1
