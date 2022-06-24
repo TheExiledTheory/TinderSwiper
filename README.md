@@ -9,24 +9,23 @@ My initial inspiration for this project was because I wanted to get the results 
     Python 3.8.6
 
 # General information: 
-
-    * Before running this program, you want to make sure you update your X-AUTH-TOKEN as shown in the documentation. 
-    * The X-AUTH-TOKEN is nothing more than a key witch authenticates requests made to the Tinder API. 
-    * To my knowledge a unique key is generated after a period of 7 days from issue time. This means the longest period of time that the bot will run on its own for is 7 days after which Tinder will revoke the token and issue a new one. 
-    * If the urls for the API endpoints happen to change at any point at time, you cant attempt to update them yourself by using either Postman or Chrome dev tools. These tools will help clue you into what url's are needed for get/post requests and what parameters need to be sent with them. 
-    * If ever an error/exception is encountered, it will print a vague error statement to console and it will also notate it in the log file and continue running. 
-    * As I mention in the disclaimer...the user is still required to: (a) hold a conversation after a successful match (b) manually update stale api keys at least once a week
-    * This works best with Tinder+ because you get to change your location and you get unlimited likes. 
-    * The bot does support messaging, however it is only limited to a simple corny openers 
     
-    *AVOIDING BANS/SHADOWN BANS* 
+        NOTES
     
-    * To avoid getting banned or shadow banned (shown to fewer people) you can take a few or all of the following steps 
-     1. Use a spoofed IP that you haven't used before 
-     2. Use a never used before Google/Facebook/Phone# ... Google voice is great for the phone number 
-     3. Use different profile details - name / location / school / bio 
-     4. Use brand new photos. Tinder collects and retains your photos and meta data from those photos. You can import your photos into Window and go to properties to remove meta data. For linux you can use [sudo mogrify -strip ./*jpeg] 
-     5. Use a new or portable browser before making a new account and while using in order to clear cookies and browser fingerprint 
+     * API keys (X-AUTH-TOKENS) change after a 1 week period - add yours into the source code before running
+     * Use Postman and Chrome Dev Tools to update broken API endpoints 
+     * Semi-Autonomous: (a) hold a conversation after a successful match (b) manually update stale api keys at least once a week
+     * Tinder+ works best because the bot doesn't have to pause
+     * Only corny liners are supported as messaging from the bot
+    
+        AVOIDING BANS/SHADOWN BANS
+     
+     1. Create an operate a new account from a spoofed IP 
+     2. Use a brand new email, some fake email generators may work
+     3. TextVerified.com (although cheaply paid) is an execellent service for SMS verification 
+     4. Do not ever make your account exactly the same  
+     5. Never use the same photos. Tinder actively collects and retains photos along with their meta data. Go through any photos and wipe all meta data
+     6. If you buy Tinder+ ... always use different payment details. Use online virtual credit card if you need to.
     
      
     
