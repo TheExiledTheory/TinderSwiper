@@ -1,4 +1,4 @@
-# DISCLAIMER: This project is mostly finalized. Nevertheless, at any point in time, Tinder can change one little thing on the backend of their API and it can break the bot. This currently posted version of the bot is not perfect either; the bot as of now is SEMI-AUTONOMOUS and swipes based upon a randomness factor. I do not have a work around for updating the the auth key automatically. I am slowly working implementing a machine learning algorithm in order to swipe based on an ai determined score. I have included a documentation pdf which will provide some insight on how to obtain your X-AUTH-KEY and run the bot. 
+# DISCLAIMER: This project is no longer maintained. I strongly encourage you to take what I have written and improve upon it. Tinder can and most certainly will change the backend API endpoints at some point so know that they will need to be altered. You will also need to obtain your API key using Chrome Dev Tools. The bot in its current state is finalized but not perfect. The To-Do section notes the improvements I would like to have implemented.
 
 # Description: 
 My initial inspiration for this project was because I wanted to get the results from Tinder without swiping in the toxic piss-pit of an app. I noticed that I was putting more time and primarily more effort into it without getting anything in return from it. So with this approach I can use it from time to time when I am uniquely bored but and it will passively run when I don't care to use it. This bot does not amplify the quality or quantity of your matches beyond what it is to begin with, it just swipes for you. So whatever kind of matches you were initially getting, you will continue to get...just without any effort :) 
@@ -34,6 +34,7 @@ My initial inspiration for this project was because I wanted to get the results 
     1. Create a method for updating X-AUTH-TOKEN automatically 
     2. Implement an AI chat bot with a web hook for messaging matches  
     3. Setup a UI to use to display an interface similar to that of Tinder 
+    4. Implement a system for analysing profile pictures and assigning an 'attractiveness score' with ML 
     
 ## DEPENDENCIES: 
     Python3 Libraries           [Colorama, shapely, pyproj, requests]
